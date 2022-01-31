@@ -1,0 +1,89 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("1.jpg") fixed center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.quote {
+    color: white;
+    font-family: "Great Vibes", cursive;
+    margin-bottom: 5px;
+}
+
+.titlu {
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px grey;
+    transition: all 0.6s;
+}
+
+.titlu:hover {
+    transform: translate(-5px, -3px);
+    text-shadow: 2px 2px 20px grey;
+}
+
+.galerie {
+    transition: all 0.7s;
+}
+
+.galerie:hover {
+    transform: scale(1.05);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.cards {
+    display: inline-block;
+    width: 360px;
+    height: 600px;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+    border: 2px solid black;
+    margin: 7px;
+    text-align: center;
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    color: black;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: black;
+    color: wheat;
+    transform: rotateY(180deg);
+}
+
+.cards:hover {
+    transform: rotateY(180deg);
+}
+
+.imag {
+    width: 100%;
+    border: 2px solid black;
+}
